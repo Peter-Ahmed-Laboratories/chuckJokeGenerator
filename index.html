@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuck Norris Jokes</title>
+  </head>
+  <body>
+    <!--  Site Mark Up here -->
+    <script>
+      // init
+
+      // make initial query for joke
+      fetch("http://api.icndb.com/jokes/random")
+        .then((response) => {
+          return response.json();
+        })
+        .then((jsonResponse) => {
+          console.log(jsonResponse);
+        });
+
+      // display joke
+
+      // listen for button click for new joke
+    </script>
+  </body>
+</html>
