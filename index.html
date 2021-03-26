@@ -5,20 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chuck Norris Jokes</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!--  Site Mark Up here -->
+
+    <header class="wrapper">
+      <div class="header">
+        <h1>Chuck Norris Joke Genorator</h1>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <main>
+        <div class="jokeButton">
+          <h2 class="jokebuttonText" onclick="button()">
+            Click to initiate joke
+          </h2>
+        </div>
+
+        <div class="responseArea">
+          <p id="jokeResponse"></p>
+        </div>
+      </main>
+    </div>
+
     <script>
       // init
 
       // make initial query for joke
-      fetch("http://api.icndb.com/jokes/random")
-        .then((response) => {
-          return response.json();
-        })
-        .then((jsonResponse) => {
-          console.log(jsonResponse);
-        });
+      const jokeQuery = () => {
+        fetch("http://api.icndb.com/jokes/random?limitTo=[nerdy]")
+          .then((response) => {
+            return response.json();
+          })
+          .then((jsonResponse) => {
+            console.log(jsonResponse);
+          });
+      };
 
       // display joke
 
