@@ -12,14 +12,14 @@
 
     <header class="wrapper">
       <div class="header">
-        <h1>Chuck Norris Joke Genorator</h1>
+        <h1>Chuck Norris Joke Generator</h1>
       </div>
     </header>
 
     <div class="wrapper">
       <main>
         <div class="jokeButton">
-          <h2 class="jokebuttonText" onclick="button()">
+          <h2 class="jokebuttonText" onclick="jokeQuery()">
             Click to initiate joke
           </h2>
         </div>
@@ -30,23 +30,6 @@
       </main>
     </div>
 
-    <script>
-      // init
-
-      // make initial query for joke
-      const jokeQuery = () => {
-        fetch("http://api.icndb.com/jokes/random?limitTo=[nerdy]")
-          .then((response) => {
-            return response.json();
-          })
-          .then((jsonResponse) => {
-            console.log(jsonResponse);
-          });
-      };
-
-      // display joke
-
-      // listen for button click for new joke
-    </script>
+    <script src='script.js'></script>
   </body>
 </html>
