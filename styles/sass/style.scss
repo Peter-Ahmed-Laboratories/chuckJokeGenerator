@@ -1,17 +1,35 @@
-.wapper {
+
+.wrapper {
   max-width: 1200px;
+   width: 90%;
+    margin: 0 auto;
 }
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.jokebuttonText {
+
+.jokeButton{
+  display: flex;
+  justify-content: center;
+}
+
+.jokeButtonText {
   border: solid 2px red;
 }
 
+.jokeButtonText:hover{
+  cursor: pointer;
+}
+
+h2{
+  padding: 20px;
+}
+
 .responseArea {
+  display: flex;
+  justify-content: center;
   border: solid 2px blue;
 }

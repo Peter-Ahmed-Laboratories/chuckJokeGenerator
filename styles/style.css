@@ -1,40 +1,45 @@
 .wrapper {
   max-width: 1200px;
-   width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.jokeButton{
+.jokeButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .jokeButtonText {
   border: solid 2px red;
 }
 
-.jokeButtonText:hover{
+.jokeButtonText:hover {
   cursor: pointer;
 }
 
-h2{
+h2 {
   padding: 20px;
 }
 
 .responseArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: solid 2px blue;
 }
