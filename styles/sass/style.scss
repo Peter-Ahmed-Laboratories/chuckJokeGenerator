@@ -28,8 +28,14 @@ h2{
   padding: 20px;
 }
 
+p{
+  font-size: 35px;
+}
+
 .responseArea {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 30vh;
   border: solid 2px blue;
 }
