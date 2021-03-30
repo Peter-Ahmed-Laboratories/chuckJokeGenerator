@@ -7,13 +7,17 @@
             return response.json();
           })
           .then((jsonResponse) => {
-              
+               
+            //clear jokefield
+            document.querySelector('#jokeResponse').innerHTML = '';
+            
+            // display joke
               document.querySelector('#jokeResponse').append(jsonResponse.value.joke);
 
               
           });
       };
 
-      // display joke
+     
 
       // listen for button click for new joke
