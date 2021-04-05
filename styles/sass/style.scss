@@ -1,3 +1,5 @@
+@import 'setup';
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -30,6 +32,7 @@
 .jokeButton {
   display: flex;
   justify-content: center;
+  background-color: rgb(147, 188, 232);
 }
 
 .jokeButtonText {
@@ -65,7 +68,7 @@ p {
   height: 30vh;
   background-color: whitesmoke;
   font-family: 'open sans';
-  margin-top: 110px;
+  margin-top: 50px;
   margin-right: 0px;
   opacity: .5;
 }
@@ -75,7 +78,7 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  top: 30vh;
+  top: 24vh;
   overflow: hidden;
 }
 
