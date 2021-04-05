@@ -12,12 +12,18 @@
             document.querySelector('#jokeResponse').innerHTML = '';
             
             // display joke
-              document.querySelector('#jokeResponse').append(jsonResponse.value.joke);
-
+            document.querySelector('#jokeResponse').append(jsonResponse.value.joke);
+           
+        
               
           });
+     
       };
 
      
 
       // listen for button click for new joke
+// var quotFix = () => {
+//   document.body.innerHTML = document.body.innerHTML.replace('&quot;', '"');
+// }
+

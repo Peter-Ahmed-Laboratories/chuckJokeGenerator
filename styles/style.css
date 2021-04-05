@@ -39,6 +39,7 @@ p {
 }
 
 .responseArea {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,8 +50,23 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 30vh;
-  border: solid 2px blue;
-  background-color: turquoise;
+  background-color: whitesmoke;
   font-family: 'open sans';
-  margin-top: 40px;
+  margin-top: 110px;
+  margin-right: 0px;
+  opacity: .5;
+}
+
+.videoContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  top: 30vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
 }
