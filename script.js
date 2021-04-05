@@ -2,7 +2,7 @@
 
 // make initial query for joke
 const jokeQuery = () => {
-  fetch("http://api.icndb.com/jokes/random?limitTo=[nerdy]")
+  fetch("https://api.icndb.com/jokes/random?limitTo=[nerdy]")
     .then((response) => {
       return response.json();
     })
